@@ -1,0 +1,20 @@
+CASO O PROJETO TENHA SIDO INICIADO
+/na pasta do projeto crie o respositório e selecione a branch main
+git init -b main
+
+/muda a branch corrente para a main caso não tenha feito o comando anterior
+git checkout -b main
+
+/adiciona todos os arquivos para o commit
+git add .
+
+/faca o primeiro commit dos arquivos
+git commit -m "Primeiro Commit"
+
+crie o repositório no GitHub para receber os arquivos através do site sem utilizar comandos adicionais
+
+no prompt conecte os dois
+git remote add origin https://github.com/sergiolj/frontend.git
+
+uma vez comectados use para atualizar o conteúdo
+git push --set-upstream origin main
