@@ -1,0 +1,76 @@
+<!DOCTYPE html> <!--DECLARAÇÃO DE HTML5 APARECE UMA VEZ ANTES DO ELEMENTO HTML-->
+<!--ELEMENTO DETERMINA O INICIO DAS INSTRUÇÕES DA PÁGINA HTML-->
+
+<html lang="pt-BR"><!--VOCÊ PODE DECLARAR QUE TODA A PÁGINA VAI SER ESCRITA EM DETERMINADA Linguagem
+USANDO O LANG NO ELEMENTO HTML--> 
+
+<!-- ELEMENTO QUE AGRUPA OS METADADOS SOBRE A PÁGINA HTML, APARECE ENTRE O <HTML> E O <BODY>
+Os metadados estão: title, meta, style, link, script e base-->
+<head> 
+    <!--ELEMENTO QUE INFORMA O FORMATO DE CARACTER USADO, UMA DESCRIÇÃO DA PÁGINA, AUTORIA, PALAVRAS CHAVE E 
+    CONFIGURAÇÃO DE VIEWPORT-->
+    <meta charset="UTF-8" /> <!--UTF-8 Padrão de configuração de caracteres-->
+    <meta name="keywords" content="HTML, CSS, Tutorial"> <!--Inserção de palavras chave sobre o conteúdo-->
+    <meta name="description" content="Estudo comentado de conceitos sobre HTML e CSS">
+    <meta name="autor" content="Sérgio Lopes">
+    <meta name="contact" content="sergio.lopes@ucsal.edu.br">
+    <meta http-equiv="refresh" content="30"> <!--Instrução para que o conteúdo da página seja recarregado a cada 30 segundos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Define o tamanho da viewport pela largura do dispositivo
+    deve ser incluída em todas as paginas, pois sem essa instrução a exibição em smartphones fica bem prejudicada-->
+
+    <!--DEFINE O TÍTULO DO HTML, É OBRIGATÓRIO E FORMATO DE TEXTO APENAS-->
+    <title>HTML Tutorial W3</title> 
+    <!--É usado pelos mecanismos de busca para exibir o resultado, é o texto que será usado para favoritar e como
+    título da toolbar do browser, deve ser preciso e significativo-->
+    
+    <!--ELEMENTO DE METADADOS EM CSS-->
+    <style> 
+    /* As instruções dentro desse metadado são codificadas conforme padrão CSS,
+    isso pode ser observado porque até a maneira de comentar muda!*/
+        body{background-color: paleturquoise;}
+        h1{color:black}
+        p{color:black}
+    </style>
+    
+    <!--ALÉM DO GRUPO DE METADADOS STYLE EXISTE O LINK 
+    QUE PODE DETERMINAR UM ARQUIVO CSS DE REFERENCIA EXTERNA-->
+    <link rel="stylesheet" href="estilos.css">
+
+    <!--CASO EXISTAM SCRIPTS NO CORPO DO HTML ESSES DEVEM SER INSERIDOS NO HEAD-->
+    <script>
+    // PESQUISAR COMO USAR PARA ALTERNAR ESSE TEXTO
+        function myFunction() {
+                document.getElementById("demo").innerHTML = "Hello JavaScript!";
+            }
+    </script>
+    <!--ELEMENTO QUE ESPECIFICA O ENDEREÇO BASE E OU O ALVO PARA TODAS AS URLS RELATIVAS NA PÁGINA-->
+    <base href="../html_css/" target="_blank">
+
+</head>
+<body>
+    <h1>Título pirncipal - O que é HTML?</h1>
+    <p> HTML significa Linguagem de Marcação de Hypertexto e é a linguagem padrão para criação<br>
+        de páginas web, descreve a estrutura da página e consiste em uma série de elementos<br> 
+        que informam ao navegador como exibir o conteúdo.
+    </p>
+    <p>Os títulos dentro de uma página web são classificados por impontância dos números 1-6</p>
+    <p>Seu uso com essa estrutura é importante porque os mecanismos de busca usam os headings<br>
+        para indexar a estrutura das páginas web. Assim eles devem refletir a estrutura da página.
+        Os headings possuem tamanho padrão mas podem ser modificados por atributos de style.</p>
+
+        <p id="demo">Clique no botão abaixo para substituir a informação desse parágrafo.</p>
+        <button type="button" onclick="myFunction()">Substituir</button>
+    <h2 style="font-size: 60px;">Subtítulo com tamanho modificado pelo CSS</h2>
+    <a href="Semantic.html" alt="Semantics em Html">Pagina Semantica</a>
+    <img src="img/image.jpg" alt="Imagem Exemplo" width="100" height="150">
+
+    <h2>Subtítulo</h2>
+    <p style="color:blue;">Elementos em HTML são todas as definições que tenham conteúdo e precisam indicar onde iniciam e terminam
+        como os parágrafos (<'definicao'><'/definicao'>), embora alguns ELEMENTOS não possuam indicação de fim, esses 
+        são considerados ELEMENTOS VAZIOS como o (<'br'>)
+    </p>
+    <div lang="en">
+        <p>This part of the web page was written in english</p>
+    </div>
+</body>
+</html>
