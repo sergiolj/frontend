@@ -18,3 +18,8 @@ git remote add origin https://github.com/sergiolj/frontend.git
 
 uma vez comectados use para atualizar o conteúdo
 git push --set-upstream origin main
+
+para adicionar a pasta a outro computador use
+lembre-se que o nome do repositório será criado como pasta em seu computador 
+se vc tiver uma pasta com o mesmo nome ela será duplicada
+git clone https://github.com/sergiolj/frontend.git

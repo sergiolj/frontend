@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="autor" content="Sérgio Lopes Júnior">
+    <meta name="keywords" content="HTML, LISTS">
+    <base href="/">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>HTML Lists</title>
+    <style>
+        /*O CSS USA ESTILOS PARA CADA ELEMENTO DO HTML, LOGO TEMOS ESTILOS PARA A LISTA - UL
+        */
+        #menuUl { /*AO INVES DE USAR O CSS QUE INDICA O ELEMENTO UL CRIA-SE UM IDENTIFICADOR
+            QUE POSSIBILITA QUE SE MODIFIQUE APENAS AS UNORDENED LISTS QUE USEM O IDENTIFICADOR*/
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333333;
+        }
+        /*E OUTROS ESPECÍFICOS PARA ITENS DA LISTA LI*/
+        #menuLi {
+            float: left;
+        }
+        /*E OUTROS PARA OS HYPERLINK A*/
+        #menuA {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+        /*APARENTEMENTE O CSS QUE CONTROLA QUANDO O CURSOR ESTÁ SOBRE O ELEMENTO HYPERTEXT LINK 
+        POSSUI UM ATRIBUTO ESPECÍFICO hover acessado através de :*/
+        #menuA:hover {
+            background-color: #ffae00;
+        }
+        /*
+        li{
+            list-style-type: disc;
+        }
+        */
+    </style>
+</head>
+<body>
+    <h2>Menu usando Listas Não Numeradas UL e CSS com id</h2>
+    <ul id="menuUl">
+        <li id="menuLi"><a id="menuA" href="#cafe.html">Cafés</a></li>
+        <li id="menuLi"><a id="menuA" href="#cha.html">Chás</a></li>
+        <li id="menuLi"><a id="menuA" href="#salgados">Salgados</a></li>
+        <li id="menuLi"><a id="menuA" href="#doces.html">Doces</a></li>
+    </ul>
+    <h2>Listas Não Numerada UL</h2>
+    <ul> <!--UNORDERED LIST OU LISTA NÃO ORDENADA, LISTA COM ITENS 
+        COM MARCAÇÃO SEM NÚMERO-->
+        <li>Item 2</li>
+        <li>Item 1</li>
+        <li>Item 5</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+    <h2>Listas Numeradas OL</h2> <!--NOTE QUE A NUMERAÇÃO DA LISTA OCORRE EM
+    ORDEM DE INSERÇÃO E NENHUMA ESTRUTURA DE ORDENAMENTO É APLICADA-->
+    <ol type="A"> <!--O ORDENAMENTO DOS ITENS PODE SER FEITO DE DIVERSAS FORMAS COM O ATRIBUTO TYPE DO CSS
+        USANDO NUMEROS 1, LETRAS A OU a, NUMEROS ROMANOS I OU i-->
+        <li>Item 2</li>
+        <li>Item 1</li>
+        <li>Item 5</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ol>
+    <h2>Tipos de Café em Lista Descritiva DL</h2>
+    <dl> <!--ELEMENTO DESCRIPTION LIST, OU LISTA DESCRITIVA-->
+        <dt>Carioca</dt> <!--ELEMENTO DESCRIPTION TAG, PALAVRA CHAVE DA LISTA-->
+        <dd>Café passado leve</dd> <!--ELEMENTO DESCRIPTION, DESCREVE OU DÁ MAIORES INFORMAÇÕES SOBRE O TAG-->
+        <dt>Pingado</dt>
+        <dd>Café passado adicionado pequena quantidade de leite</dd>
+        <dt>Expresso</dt>
+        <dd>Café extraído por pressão</dd>
+    </dl>
+    <h2>Listas Não Numerada com CSS UL</h2>
+    <ul style="list-style-type: square;"> <!--PERMITE QUE AS MARCAÇÕES DAS LISTAS SEJAM PERSOLANIZADAS
+        COM AS OPÇÕES disc(default), circle, square, none-->
+        <li>Item 2</li>
+        <li>Item 1</li>
+        <li>Item 5</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+    <h2>Listas encadeadas (Listas dentro de listas) OL</h2>
+    <ul style="list-style-type: circle;">
+        <li>Café</li>
+            <ol type="I" start="10"> <!--PODEM SER NUMERADAS EM ROMANOS-->
+                <li>Expresso</li>
+                <li>Pingado</li>
+                <li>Latte</li>
+           </ol>
+        <li>Chá</li>
+           <ol type="1" start="20"> <!--AS LISTAS NUMERADAS PODEM PARTIR DE UM NÚMERO DEFINIDO PELO USUÁRIO-->
+                <li>Hortelã</li>
+                <li>Camomila</li>
+                <li>Earl Grey</li>
+           </ol>
+    </ul>
+</body>
+</html>
