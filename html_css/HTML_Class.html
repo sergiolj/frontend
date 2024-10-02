@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="po-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="HTML, Class">
+    <meta name="description" content="Explica os conceitos principais de uso de classes com exemplos de codigo">
+    <meta name="autor" content="Sérgio Lopes Júnior">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Class Attribute HTML</title>
+
+    <link rel="stylesheet" href="css/estilos.css"> <!--LINK PARA CSS EXTERNO-->
+
+    <style>
+        /*CONTEÚDO CSS INLINE*/
+        .city1{ 
+            background-color: tomato;
+            font-size: 50px;
+            color: white;
+            border: 2px solid black;
+            margin: 0px; /* espaço entre a borda esquerda do browser e o container*/
+            width: 100%; /*espaço em que o container será estendido*/
+            padding: 5px; /* espaço entre a borda do container e o início do texto*/
+        }
+        .city2{ 
+            background-color: tomato;
+            color: white;
+            border: 2px solid black;
+            margin: 40px;
+            width: 100%;
+            padding: 20px; /* espaço entre a borda do container e o início do texto*/
+        }
+        .city3{ 
+            background-color: tomato;
+            color: white;
+            border: 2px solid black;
+            margin: 60px;
+            width: 500px;
+            padding: 40px; /* espaço entre a borda do container e o início do texto*/
+        }
+        .notas{
+            font-size: 120%;
+            color: red;
+        }
+    </style>
+
+    <script type="text/JavaScript" src="js/hide_function.js"></script> <!--JAVASCRIPT EXTERNO AO CÓDIGO-->
+
+    <script>
+        //CONTEÚDO JS INTERNO
+        function hideFunction() {
+            var x = document.getElementsByClassName("city");
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <head>
+        <nav>
+
+        </nav>
+    </head>
+    <main>
+        <h2>HTML Class Atributo</h2>
+        <p>É usado para especificar uma classe para um elemento HTML, sendo que multiplos elementos podem compartilhar a mesma classe.
+            O atributo classe é comummente usado para apontar para um nome de classe em uma stylesheet e pode ser utilizado
+            também pelo JavaScript para manipular elementos específicos.
+        </p>
+    <h1><spam class="notas">Sintaxe</spam> de uso</h1>
+    <p>Para criar uma classe use qualquer nome usando o atributo CLASS=" " no elemento, tomando cuidado que classes são CASE SENSITIVE.
+        Dentro do CSS a classe deve ser indicada com a inserção de um ponto (.) antes de seu nome seguido por aspas {} contendo as atribuições.
+    </p>
+    <div class="city1"> <!--A classe city1 pode receber atributos CSS específicos
+        sendo possível criar todo um estilo de elementos diversos de HTML para a classe-->
+    <h2>London</h2>
+    <p>London is the capital of England.</p>
+    </div> 
+
+    <div class="city2">
+    <h2>Paris</h2>
+    <p>Paris is the capital of France.</p>
+    </div>
+
+    <div class="city3">
+    <h2>Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+    </div>
+    <h2>Use of The class Attribute in JavaScript</h2>
+    <p>Click the button to hide all elements with class name "city":</p>
+    
+    <button onclick="hideFunction()">Hide elements</button>
+    
+    <h2 class="city">London</h2>
+    <p>London is the capital of England.</p>
+    
+    <h2 class="city">Paris</h2>
+    <p>Paris is the capital of France.</p>
+    
+    <h2 class="city">Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+    </main>
+    <footer>
+
+
+    </footer>
+</body>
+</html>
