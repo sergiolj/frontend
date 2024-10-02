@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="po_BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="autor" content="Sérgio Lopes Júnior">
+    <meta name="keywords" content="HTML, ID">
+    <meta name="description" content="Conceitos de elemento HTML ID e codificações de exemplo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>HTML ID - Usos e Sintaxe</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <style>
+        #meuTitulo{
+            background-color: aqua;
+            color: black;
+            width: 200px;
+            text-align: left;
+            padding: 20px; /*distância da borda do container para início do texto em todas as direções*/
+        }
+    </style>
+    
+    <script type="text/JavaScript" src="js/change_textbyID.js"></script>
+    <script>
+        function displayResult() {
+            document.getElementById("change").innerHTML = "Have a nice day!";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h2>Exemplo de Bookmark utilizando id na mesma página</h2>
+        <a href="#comparacao">Exemplo de Bookmark utilizando id na mesma página</a>
+        <br>
+        <h2>Exemplo de Bookmark utilizando id em outra página e outra aba</h2>
+        <a href="HTML_ID.html#comparacao" target="_blank">Quer ler esse assunto em outra aba?</a>
+
+        <h2>Usando um id como atributo para um JavaScript</h2>
+        <h3 id="change">Olá Mundo</h3>
+        <button onclick="displayResult()">Muda o texto</button>
+
+        <nav>
+
+        </nav>
+
+    </header>
+<div style="padding: 1000px;"></div>
+<section>
+    <article>
+        <h2>Atributo ID em HTML</h2>
+        <div>
+        <p style="width: 500px;">O atributo Id é usado para especificar um identificador único para um elemento de HTML.
+            NÃO PODE EXISTIR MAIS DE UM ELEMENTO COM O MESMO ID EM UM DOCUMENTO HTML.
+            O id é usado para apontar para um estilo específico em uma stylesheet e também pode ser
+            utilizado para manipular elementos específicos com JavaScript.
+            A sintaxe para a definição de ids em CSS é # seguido do nome do id e aspas {}.
+        </p></div>
+    </article>
+    <h1 id="meuTitulo">Título</h1>
+<hr>
+    <h2 id="comparacao">Diferença CLASSE X ID</h2>
+    <p>Uma classe pode ser utilizada com multiplos elementos HTML enquanto um id só pode
+        ser utilizado por um elemento.
+        Os IDs também são utilizados para criação de BOOKMARKS no corpo do HTML no caso de páginas muito extensas como
+        capítulos de um artigo ou texto longo.
+    </p>
+
+</section>
+
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>

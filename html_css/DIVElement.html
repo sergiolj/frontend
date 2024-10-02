@@ -5,33 +5,146 @@
     <title>title</title>
 
     <style>
-        div{
+        div.Unica{
             width: 300px;
             margin: auto;
-            text-align: center;
-            background-color: lightyellow;
+            background-color: lightgoldenrodyellow;
         }
-        div.grupoLinha{
+        div.Coluna{
+            width: 200px; /*LIMITA A LARGURA DA CAIXA DIV*/
+            margin: auto;
+            text-align: justify;
+            background-color: white;
+        }
+        /*SÃO A DIV EM LINHA COM FLOAT PRECISA DE DUAS ENTRADAS DE ATRIBUTOS
+        A div.Linha E a div.Linha div para funcionar
+        A PRIMEIRA PARECE PASSAR PARÂMETRO DA LINHA INTEIRA*/
+        div.LinhaFloat{
             width: 100%;
             overflow: auto;
         }
-        div.grupoLinha div{
+            /*ENQUANTO ESSA SEGUNDA INSTRUÇÃO CONTROLA
+            O QUE ACONTECE NOS ELEMENTOS INTERNOS DO CONTAINER, NESTE CASO UMA DIV*/
+            div.LinhaFloat div{
+                width: 33%;/*USA TODA A LARGURA DISPONÍVEL PARA A CAIXA DIV*/
+                float: left;
+            }
+                        /*ENQUANTO ESSA SEGUNDA INSTRUÇÃO CONTROLA
+            O QUE ACONTECE NOS ELEMENTOS INTERNOS DO CONTAINER, NESTE CASO UM HEADING*/
+            div.LinhaFloat h2{
+                font-size: larger;
+                color: rgba(19, 19, 19, 0.842);
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            }
+        div.LinhaInLine{ /*NESSE CASO EU NÃO TENHO NESTED CONTAINERS
+            MAS O RESULTADO DO INLINE NÃO PARECE TÃO BOM QUANTO O DO FLOAT*/
             width: 33%;
-            float: left;
+            display: inline-block;
+        }
+        /*Usando CSS Flexbox TAMBÉM SÃO NECESSÁRIAS DUAS ENTRADAS DE 
+        ATRIBUTO COM SINTAXE DIFERNTE DA FLOAT*/
+        div.LinhaFlex{
+            display:flex;
+        }
+        div.LinhaFlex > div{
+            width: 33%;
+        }
+        div.LinhaGrid{
+            display: grid;
+            grid-template-columns: 25% 50% 25%;
+        }
+
+        div.Generic{
+            width: 33%; /*DIVIDE A LARGURA DA DIV PERCENTUALMENTE COM O OBJETIO DE CRIAR UM ARRANJO
+            DE DIVS QUANDO EXISTEM MULTIPLOS ELEMENTOS*/
+            float: left; /*O ATRIBUTO FLOAT É USADO PARA POSICIONAR O CONTEÚDO DE VÁRIOS DIVS
+            LADO A LADO SEM ESPAÇOS ENTRE ELES*/
+        }
+        #divIsolado{ /* MESMO QUANDO CRIADO UM ID NOVO PARA UM ELEMENTO, CASO NÃO SEJAM ESPECIFICADOS
+            OS ATRIBUTOS E EXISTAM ATRIBUTOS PADRÃO DADOS AO ELEMENTO ESSE IRÁ UTILIZAR OS
+            PADRÕES E APENAS MUDAR AS CARACTERÍSTICAS ESPECIFICAS DO OBJETO */
+            width: 100%;
+            text-align: left;
         }
 
     </style>
 </head>
 <body>
+    <h2>Elemento SPAM</h2>
+    <p>O SPAM é um elemento de HTML usado para <spam style="color: red;font-weight: bold;font-style: italic;"> destacar parte de um texto ou uma parte do documento</spam>,
+        ele não requer qualqer atributo, mas é comum o uso de atributos
+        de identificação como CLASS E ID para posterior uso com CSS ou atributos de 
+        STYLE. O SPAM é um atributo de nível INLINE, ou seja, só utiliza o espaço necessário para sua
+        inserção.
+        CASO nao sejam usados atributos visualmente o <spam>spam não sofre alteração</spam> em relação ao 
+        texto comum.
+    </p>
+    <p>My mother has <span style="color:blue;font-weight:bold;">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold;">dark green</span> eyes.</p>
+<hr>
+    <h2>ELEMENTO DIV</h2>
+    <p>Os códigos abaixo são feitos com DIV, que é um elemento
+        de HTML que cria uma caixa ou container para outros elementos
+        HTML, os DIV são elementos de nivel Block que usam todo o espaço disponível 
+        para adaptar sua exibição.
+    </p>
+    <hr>
 
-    <div>
+    <p>Como o DIV é por padrão um elemento tipo Block
+        <div id="divIsolado" style="background-color: rgb(115, 168, 199);font-weight: bold;">sempre que ele for utilizado
+        ele vai ser exibido em nova linha e usando todo o espaço disponível</div>, podendo inclusive 
+        ser utilizado em um parágrafo.
+    </p>
+
+    <div class="Unica">
         <h2>Londres</h2>
         <p>Capital da Ingraterra</p>
         <p>Uma cidade moderna com mais de 13 milhões de habitantes</p>
     </div>
 
 
-    <div class="grupoLinha">
+    <div class="LinhaFloat"> <!--ESSE É UM CONTAINER DIV MAIOR COM NOME DE OBJETO-->
+        <div style="background-color: aqua;"> <!-- JÁ ESSE É UM DIV NÃO NOMEADO, OU PADRÃO, MAS REFERE-SE
+            AO DIV CONTAINER NO QUAL ESTÁ INSERIDO, POR ISSO A INSTRUÇÃO PARA CSS DELE É
+            div.Linha div, assim como poderíamos ter uma div.Linha h2 e outra div.Linha p QUE SÃO ELEMENTOS INSERIDOS
+            NO CONTAINER div.Linha-->
+            <h2>London</h2>
+            <p>London is the capital city of England.
+            London has over 13 million inhabitants.</p>
+        </div>
+        <div style="background-color: lightgreen;">
+            <h2>Oslo</h2>
+            <p>Oslo is the capital city of Norway.
+             Oslo has over 600.000 inhabitants.</p>
+        </div>
+        <div style="background-color: lightsalmon;">
+            <h2>Rome</h2>
+            <p>Rome is the capital city of Italy.
+            Rome has almost 3 million inhabitants.</p>
+        </div>
+    </div>
+<hr>
+    <h2>Usando Display inline-block </h2>
+    <p>Nesse outro exemplo cada DIV é independente e não existe um container DIV que agurpe todos. 
+        O resultado é que nessa implementação aparece a característica do tipo Block deixando um espaço entre os DIVs</p>
+
+        <div class="LinhaInLine" style="background-color: aqua;">
+            <h2>London</h2>
+            <p>London is the capital city of England.
+            London has over 13 million inhabitants.</p>
+        </div>
+        <div class="LinhaInLine" style="background-color: lightgreen;">
+            <h2>Oslo</h2>
+            <p>Oslo is the capital city of Norway.
+             Oslo has over 600.000 inhabitants.</p>
+        </div>
+        <div class="LinhaInLine" style="background-color: lightsalmon;">
+            <h2>Rome</h2>
+            <p>Rome is the capital city of Italy.
+            Rome has almost 3 million inhabitants.</p>
+        </div>
+        <hr>
+    
+    <div class="Coluna">
         <div style="background-color: aqua;">
             <h2>London</h2>
             <p>London is the capital city of England.
@@ -48,5 +161,53 @@
             Rome has almost 3 million inhabitants.</p>
         </div>
     </div>
+    <hr>
+<h2>Usando Flexbox</h2>
+<p>O Flexbox é um módulo de layout do CSS para facilitar o uso do design responsivo sem usar float ou posicionamento.
+    O resulado parace ser o mesmo do Float embora sua sintaxe seja diferente.
+</p>
+    <div class="LinhaFlex">
+        <div style="background-color: aqua;">
+            <h2>London</h2>
+            <p>London is the capital city of England.
+            London has over 13 million inhabitants.</p>
+        </div>
+        <div style="background-color: lightgreen;">
+            <h2>Oslo</h2>
+            <p>Oslo is the capital city of Norway.
+             Oslo has over 600.000 inhabitants.</p>
+        </div>
+        <div style="background-color: lightsalmon;">
+            <h2>Rome</h2>
+            <p>Rome is the capital city of Italy.
+            Rome has almost 3 million inhabitants.</p>
+        </div>
+    </div>
+    <hr>
+<h2>Usando Grid</h2>
+<p>O Grid é um módulo de layout do CSS que oferece um modelo de organização baseada em grid com 
+    linhas e colunas dispensando o uso de Float e de posicionamento.
+    Similar ao Flexbox com a vantagem de poder organizar individualmente cada uma das linhas e colunas.
+    Similar ao Flexbox e ao Float o Grid usa um container DIV externo e outros vinculados internamente.
+    Difere apenas do uso do inline-block que não apresenta o container externo.
+</p>
+<div class="LinhaGrid">
+    <div style="background-color: aqua;">
+        <h2>London</h2>
+        <p>London is the capital city of England.
+        London has over 13 million inhabitants.</p>
+    </div>
+    <div style="background-color: lightgreen;">
+        <h2>Oslo</h2>
+        <p>Oslo is the capital city of Norway.
+         Oslo has over 600.000 inhabitants.</p>
+    </div>
+    <div style="background-color: lightsalmon;">
+        <h2>Rome</h2>
+        <p>Rome is the capital city of Italy.
+        Rome has almost 3 million inhabitants.</p>
+    </div>
+</div>
+<br><br>
 </body>
 </html>
