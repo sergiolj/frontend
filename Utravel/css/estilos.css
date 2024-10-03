@@ -1,3 +1,68 @@
+
+/*Style Semantics*/
+body{
+    background: url("../img/background_airport.png") no-repeat top center;
+    font-family: "Montserrat", sans-serif, Verdana, Geneva, Tahoma;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+header{
+    width: 1488px;
+    height: 420px;
+    padding-top: 60px;
+    color: white;
+}
+nav{
+    float: right;
+}
+footer{
+    width: 100%;
+    background-color:#C2CFF0;
+    font-family: "Montserrat", sans-serif;
+}
+
+/*Style Sections*/
+#search{
+    background-color: #ffffff;
+    border-radius: 7px;
+    width: 1110px;
+    height: 372px;
+    margin-top: -25px;
+    align-self: auto;
+    padding-top: 25px;
+    padding-left: 50px;
+    box-shadow: 2px -6px 5px 3px rgba(0, 0, 0, 0.26);
+}
+#alert{
+    width: 1110px;
+    height: 80px;
+    padding: 20px;
+    background-color: #FFF8E1;
+}
+#traveling{
+    width: 1110px;
+    height: 405px;
+    padding: 20px;
+    margin-top: 0px;
+}
+
+#discovery{
+    width: 1110px;
+    height: 408px;
+    padding: 20px;
+    margin-top: 130px;
+}
+
+/*Style Generics*/
+.montserrat-font {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100px;
+    font-style:normal;
+  }
+  
 a:link{
     text-decoration: none;
 }
@@ -5,7 +70,8 @@ p{
     font-size: 14px;
 }
 h1{
-    font-size: 35px;
+    font-size: 48px;
+    font-style: medium;
 }
 h2{
     font-size: 20px;
@@ -24,56 +90,110 @@ h6{
     font-size: 14px;
     font-weight: lighter;
 }
+/*Style Form Elements*/
+.bookButton{ /*Personalizacao do botão de Book*/
+    color: white;
+    border-radius: 5px;
+    background: #FF7100;
+    width: 244px;
+    height: 34px;
+    border: none;
+    font-size: 16px;
+}
+.citySelect{ /*Personalização das caixas de Select e de date*/
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    color: gray;
+    border: 0.5px solid;
+    border-color: rgb(134, 134, 134);
+    height: 35px;
+    width: 245px;
+    border-radius: 5px;
 
-.montserrat-font {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 100px;
-  font-style:normal;
 }
-header{
-    background: url("../img/background_airport.png") ;
-    background-color: rgb(236, 162, 23);
-    color: white;
+.citySelect select.selected{
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+  }
+
+/*Traveling Class */
+.listMenu div{
+    display: flex;
+    padding-right: 100px;
 }
-.headerNav{
-    width:590px;
-    color: white;
-    margin: auto;
+div.listMenu a{
+    float: left;
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 18px;
+    text-decoration: none;
+}
+div.listMenu a:{
+    color:#FF7100;
+    text-decoration: underline;
+}
+.traveling{
+    vertical-align: top;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.traveling div{
+    border-radius: 0.5px;
+    border: 0.5px solid #C2CFF0;
+    background-color:#F5F8FF ;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.26);
+}
+.traveling img{
+    float: left;
+    padding-right: 10px;
+}
+.discovery{
+    vertical-align: top;
+    display: inline-block;
+    width: 33%;
 }
 .headerNav a{
-    color: white;
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
+        display: block;
+        height: 30px;
+        margin-right: 50px;
+        color: #FFF;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px; /* 64% */
+        text-decoration: none;
 }
-body{
-    background-color: white;
-    font-family: "Montserrat", sans-serif;
+.headerNav a:hover{
+    color: #FF7100;
+    text-decoration: underline;
 }
-#divFormSearch{
-    div{
+.headerNav nav{
+    float: right;
+}
+.headerNav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+div.Grid{
+        padding-left: 20px;
         display: grid;
         grid-template-columns: 33% 33% 33%;
-    }
 }
-#alert{
-    background-color:#FFF8E1 ;
+div.Inline{
+    display: inline-block;
+    width: 33%;
 }
-#traveling{
-    div{
-        display: grid;
-        grid-template-columns: 25% 25%;
-    }
-}
-#discovery{
-    div{
-        width: 33%;
-        display: inline-block;
-    }
-}
-footer{
-    background-color:#C2CFF0;
-    font-family: "Montserrat", sans-serif;
+.footerInfo{
+    margin-left: 150px;
+
 }
 div.footerInfo{
     font-family: "Montserrat", sans-serif;

@@ -1,0 +1,116 @@
+/* Meu comentário */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background: url("../img/bgheader.png") no-repeat top center;
+    font-family: "Montserrat", sans-serif, Verdana, Geneva, Tahoma;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 1488px;
+    height: 420px;
+    padding-top: 60px;
+}
+
+header h1 a {
+    float: left;
+    color: #FFF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    text-decoration: none;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+header nav ul li a {
+    display: block;
+    height: 30px;
+    margin-right: 50px;
+    color: #FFF;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 64% */
+    text-decoration: none;
+}
+
+header h2 {
+    clear: both;
+    float: right;
+    width: 550px;
+    margin-top: 170px;
+    color: #FFF;
+    text-align: right;
+    text-shadow: 7px 8px 12px rgba(0, 0, 0, 0.21);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+header h3 {
+    clear: both;
+    float: left;
+    margin-left: 200px;
+    margin-top: 70px;
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.61);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#tickets {
+    width: 1006px;
+    height: 302px;
+    padding: 40px 50px;
+    border-radius: 7px;
+    background: #FFF;
+    box-shadow: 2px -6px 5px 3px rgba(0, 0, 0, 0.26);
+}
+
+#alert {
+    width: 1069px;
+    height: 40px;
+    padding: 20px;
+    border-radius: 5px;
+    background: var(--yellow-50, #FFF8E1);
+}
+
+#location {
+    width: 1109px;
+}
+
+#citycontainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.city {
+    width: 547.456px;
+    height: 171px;
+    border-radius: 5px;
+    border: 0.5px solid var(--BLUE, #C2CFF0);
+    background: var(--blue-50, #F5F8FF);
+}
+
+.city img {
+    float: left;
+}
