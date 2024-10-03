@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/estilo.css" >
+
+    <title>Utravel BES NOT</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1><a href="#">Utravel BES NOT</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#">EN</a></li>
+                </ul>
+            </nav>
+            <h2>we are here for you. Worldwide</h2>
+            <h3>Book Now!</h3>
+        </header>
+        <section id="tickets">
+            <div id="ticketsform"> 
+                <h3>Buy Tickets</h3>
+                <form>
+                    <input type="radio" id="oneway" value="oneway" name="tickets">
+                    <label for="oneway">One way</label>
+                    <input type="radio" id="roundtrip" value="roundtrip" name="tickets">
+                    <label for="roundtrip">Round trip</label>
+                    <input type="radio" id="multicity" value="multicity" name="tickets">
+                    <label for="multicity">Multi-city</label>
+                    
+                    <label for="cityfrom">From</label>
+                    <select name="cityfrom">
+                        <option value="salvador">Salvador</option>
+                        <option value="saopaulo">São Paulo</option>
+                        <option value="rio">Rio de Janeiro</option>
+                    </select>
+
+                    <label for="cityto">To</label>
+                    <select name="cityto">
+                        <option value="salvador">Salvador</option>
+                        <option value="saopaulo">São Paulo</option>
+                        <option value="rio">Rio de Janeiro</option>
+                    </select>
+
+                    <label for="date">Departure date</label>
+                    <input type="date" id="datetravel" name="datetravel">
+                    <input type="submit" name="booknow" value="Book now!">
+                </form>
+                <h4>Utravel</h4>
+            </div>
+            <div id="check">
+                <h3>Check your flight status</h3>
+            </div>
+        </section>
+        <section id="alert">
+            <img src="img/alerta.png">
+            <p>Active travel alert</p>
+            <p>There is a travel warning issued by the government due to the coronavirus epidemic (COVID-19).  <a href="#">More details</a></p>
+        </section>
+        <section id="location">
+            <h2>Traveling from your location</h2>
+            <p>round trip - one passenger</p>
+            <div id="citycontainer">
+                <div class="city">
+                    <img src="img/london.png" alt="Nome da Cidade">
+                    <p>London</p>
+                    <p>Set 25 - 21h</p>
+                    <img src="img/jetblue.png">
+                    <p>$35</p>
+                </div>
+                <div class="city">
+                    <img src="img/london.png" alt="Nome da Cidade">
+                    <p>London</p>
+                    <p>Set 25 - 21h</p>
+                    <img src="img/jetblue.png">
+                    <p>$35</p>
+                </div>
+                <div class="city">
+                    <img src="img/london.png" alt="Nome da Cidade">
+                    <p>London</p>
+                    <p>Set 25 - 21h</p>
+                    <img src="img/jetblue.png">
+                    <p>$35</p>
+                </div>
+                <div class="city">
+                    <img src="img/london.png" alt="Nome da Cidade">
+                    <p>London</p>
+                    <p>Set 25 - 21h</p>
+                    <img src="img/jetblue.png">
+                    <p>$35</p>
+                </div>
+            </div>
+        </section>
+        <section id="discover"></section>
+        <footer></footer>
+    </main>
+</body>
+</html>

@@ -24,30 +24,36 @@
 </head>
 <body>
     <header>
-        <img src="img/Utravel_logoW.png" alt="Utravel logo">
         <div class="headerNav">
-            <nav>
-                <a href="#home.html">Home</a>
-                <a href="#Help.html">Help</a>
-                <a href="#Log in.html">Lon in</a>
-                <a href="#Sign up.html">Sign up</a>
-                <a href="#EN.html">EN></a>
-            </nav>
+            <img src="img/Utravel_logoW.png" alt="Utravel logo">
+                <nav>
+                    <ul>
+                        <li><a href="#home.html">Home</a></li>
+                        <li><a href="#Help.html">Help</a></li>
+                        <li><a href="#Log in.html">Lon in</a></li>
+                        <li><a href="#Sign up.html">Sign up</a></li>
+                        <li><a href="#EN.html">EN></a></li>
+                    </ul>
+                </nav>
         </div>
+            <div>
+                <h1 style="float: right;">we are here for you. <br>
+                    Worldwide
+                </h1>
+            </div>
 
         <div>
-            <h1>we are here for you. <br>
-                Worldwide
-            </h1>
-        </div>
-        <div>
-            <h2>Book now!</h2>
+            <p style="font-size: 24px;float: left;margin-left: 162px;margin-top: 285px;">Book now!</p>
         </div>
     </header>
     <section id="search">
-        <div id="divFormSearch">
+        <div class="listMenu">
+            <a href="#Buy Tickets.html">Buy Tickets</a>
+            <a href="#flightStatus.html">Check your flight status</a>
+        </div>
+            <br><hr>
             <form action="#action.php">
-            <div>
+            <div class="Inline">
                 <p><input type="radio" name="typetrip">
                 <label for="typetrip">One way</label>
                 <input type="radio" name="typetrip">
@@ -56,6 +62,7 @@
                 <label for="typetrip">Multi-city</label>
                 </p>
             </div>
+<<<<<<< HEAD
             <div>
                 <label for="origin">From</label><br>
                 <img src="img/airplane_icon.png" alt="Airplane">
@@ -64,34 +71,48 @@
                     <option value="Aracaju" name="Aracaju">Aracaju</option>
                     <option value="Maceio" name="Maceio">Maceio</option>
                     <option value="São Paulo" name="São Paulo">São Paulo</option>
+=======
+            <div class="Grid">
+                <div>
+                    <label for="origin">From</label><br>
+                    <img src="img/airplane_icon.png" alt="Airplane">
+                    <select class="citySelect" id="origin" name="origin">
+                        <option value="none" selected disabled hidden>Select Departure</option>
+                        <option value="Salvador" name="Salvador">Salvador</option>
+                        <option value="Aracaju" name="Aracaju">Aracaju</option>
+                        <option value="Maceio" name="Maceio">Maceio</option>
+                        <option value="São Paulo" name="São Paulo">São Paulo</option>
+>>>>>>> d7743f2d18f03c11e0759de69dbecb1a924ef401
                     </select>
-            </div>
-            <div>
-                <label for="destiny">To</label><br>
-                <select id="destiny" name="destiny">
-                    <option value="Salvador" name="Salvador">Salvador</option>
-                    <option value="Aracaju" name="Aracaju">Aracaju</option>
-                    <option value="Maceio" name="Maceio">Maceio</option>
-                    <option value="São Paulo" name="São Paulo">São Paulo</option>
+                </div>
+                <div>
+                    <label for="destiny">To</label><br>
+                    <select class="citySelect" id="destiny" name="destiny">
+                        <option value="none" selected disabled hidden>Select Destination</option>
+                        <option value="Salvador" name="Salvador">Salvador</option>
+                        <option value="Aracaju" name="Aracaju">Aracaju</option>
+                        <option value="Maceio" name="Maceio">Maceio</option>
+                        <option value="São Paulo" name="São Paulo">São Paulo</option>
                     </select>
-                    <br>
-                    <input type="button" name="" value="Book now!">
-            </div>
-            <div>
-                <label for="date">Departure date</label><br>
-                <input id="dparture" type="date" name="date">
-                <br>
-                <label for="numberPass">Passengers</label><br>
-                <select id="numberPass" name="numberPass">
-                    <option value="1 adult" value="1">1 Adult</option>
-                    <option value="2 adult" value="2">2 Adult</option>
-                    <option value="3 adult" value="3">3 Adult</option>
-                </select>
-            </div>
+                    <br><br><br>
+                    <input type="button" class="bookButton" value="Book now!">
+                </div>
+                    <div>
+                    <label for="date">Departure date</label><br>
+                    <input class="citySelect" id="dparture" type="date" name="date">
+                    <br><br>
+                    <label for="numberPass">Passengers</label><br>
+                    <select class="citySelect" id="numberPass" name="numberPass">
+                        <option value="1 adult" value="1">1 Adult</option>
+                        <option value="2 adult" value="2">2 Adult</option>
+                        <option value="3 adult" value="3">3 Adult</option>
+                    </select>
+                </div>
             </form>
         </div>
         <br>
-        <img src="img/Utravel_logoO.png" alt="UtravelLogo">
+        <img src="img/Utravel_logoO.png" alt="UtravelLogo" style="display: inline-block; margin-left: 550px;">
+    
 
     </section>
     <section id="alert">
@@ -108,38 +129,42 @@
         <h4><spam style="height: bold;">Traveling from yout location</spam></h4>
         <h6>roud trip-one passenger</h6>
         <h5><a href="#exploreMore.html"><h5>Explore more destinations</h5></a>
-        <div>
+        <div class="traveling">
             <div>
-                <img src="img/London.png" alt="London city">
+                <img src="img/London.png" style="width: 235px;height: 171px;" alt="London city">
                 <h3>London</h3>
                 <h5>Apr 5-8</h5>
                 <h5>Direct flight  . 3h 15 min</h5>
                 <img src="img/flybe.png" alt="Flybe">
-                <h3>€ 35</h3>
+                <h3 style="text-align: right;padding-right: 20px;">€ 35</h3>
             </div>
             <div>
-                <img src="img/Rome.png" alt="Rome city">
+                <img src="img/Rome.png" style="width: 235px;height: 171px;"alt="Rome city"> 
                 <h3>Rome</h3>
                 <h5>Oct 5-8</h5>
                 <h5>Direct flight  . 3h 15 min</h5>
                 <img src="img/jetBlue.png" alt="JetBlue">
-                <h3>€ 45</h3>
+                <h3 style="text-align: right;padding-right: 20px;">€ 45</h3>
             </div>
             <div>
-                <img src="img/Madrid.png" alt="Madrid city">
+                <div>
+                    <img src="img/Madrid.png" style="width: 235px;height: 171px;" alt="Madrid city">
+                </div>
                 <h3>Madrid</h3>
                 <h5>Oct 5-8</h5>
                 <h5>Direct flight  . 3h 15 min</h5>
                 <img src="img/Lufthansa.png" alt="FLufthansa">
-                <h3>€ 25</h3>
+                <h3 style="text-align: right;padding-right: 20px;">€ 25</h3>
             </div>
             <div>
-                <img src="img/Paris.png" alt="Paris city">
+                <div>
+                    <img src="img/Paris.png" alt="Paris city">
+                </div>
                 <h3>Paris</h3>
                 <h5>Oct 5-8</h5>
                 <h5>Direct flight  . 3h 15 min</h5>
                 <img src="img/airfrance.png" alt="AirFrance">
-                <h3>€ 55</h3>
+                <h3 style="text-align: right;padding-right: 20px;">€ 55</h3>
             </div>
         </div>
 
@@ -148,18 +173,18 @@
 
     <section id="discovery">
         <h4>Discover</h4>
-            <div>
+            <div class="discovery">
                 <img src="img/Europe.png" alt="Europe Politics Division"><br>
                 <h2>Latest travel restrictions</h2>
                 <h4>We provide information on the entry requirements 
                     for all countries so you can plan your flight smoothly</h4>
             </div>
-            <div>
+            <div class="discovery">
                 <img src="img/InstallApp.png" alt="Install app"><br>
                 <h2>Install our mobile app</h2>
                 <h4>Our mobile app provides real-time information when you are at the airport</h4>
             </div>
-            <div>
+            <div class="discovery">
                 <img src="img/Landscape.png" alt="View Point"><br>
                 <h2>The most beautiful destinations</h2>
                 <h4>Have you ever considered visiting Easter Island or Alaska? 
