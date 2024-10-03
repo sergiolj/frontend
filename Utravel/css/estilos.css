@@ -1,3 +1,93 @@
+a:link{
+    text-decoration: none;
+}
+p{
+    font-size: 14px;
+}
+h1{
+    font-size: 35px;
+}
+h2{
+    font-size: 20px;
+}
+h3{
+    font-size: 18px;
+}
+h4{
+    font-size: 16px;
+    font-style: normal;
+}
+h5{
+    font-size: 14px;
+}
+h6{
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.montserrat-font {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100px;
+  font-style:normal;
+}
+header{
+    background: url("../img/background_airport.png") ;
+    background-color: rgb(236, 162, 23);
+    color: white;
+}
+.headerNav{
+    width:590px;
+    color: white;
+    margin: auto;
+}
+.headerNav a{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+}
 body{
-    
+    background-color: white;
+    font-family: "Montserrat", sans-serif;
+}
+#divFormSearch{
+    div{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+}
+#alert{
+    background-color:#FFF8E1 ;
+}
+#traveling{
+    div{
+        display: grid;
+        grid-template-columns: 25% 25%;
+    }
+}
+#discovery{
+    div{
+        width: 33%;
+        display: inline-block;
+    }
+}
+footer{
+    background-color:#C2CFF0;
+    font-family: "Montserrat", sans-serif;
+}
+div.footerInfo{
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+}
+div.footerInfo > div{
+    width: 33%;
+}
+ul{
+    list-style-type: none;
+}
+.footerInfo a:link{
+    color: #727171;
+}
+.footerInfo h4{
+    color: #4E4E4E;
 }

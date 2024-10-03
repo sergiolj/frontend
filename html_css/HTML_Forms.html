@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="po_BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="HTML, FORMS">
+    <meta name="description" content="Conceitos e códigos de HTML Forms">
+    <meta name="autor" content="Sérgio Lopes Júnior">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Html Forms</title>
+
+    <base href="/" target="_blank">
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+
+
+    </style>
+
+    <script type="text/Javascript" src="js/change_textbyID.js"></script>
+    <script>
+
+    </script>
+
+</head>
+<body>
+    <header>
+        <nav>
+
+        </nav>
+
+    </header>
+
+    <section>
+        <h2>HTML Forms</h2>
+        <p>O elemento HTML Form é um container para diferentes elementos HTML 
+            usado para coletar informações do usuário. Essas entradas 
+            geralmente são ennviadas para um servidor para serem processadas.
+            São elementos comuns no container form: text fields, checkboxes, radio
+            buttons, submit buttons, etc.
+        </p>
+        <form action="/action_page.php">
+            <label for="dadosUser">Primeiro Nome</label> <br>
+            <input type="text" id="nome" name="dadosUser" value="Nome"> <br>
+            <label for="dadosUser">Sobrenome</label> <br>
+            <input type="text" id="sobrenome" name="dadosUser" value="Sobrenome"> 
+            <br><br>
+            <input type="submit" value="enviar">
+        </form>
+        <h2>Elementos mais usados</h2>
+        <p>O elemento INPUT é o mais usado no container FORM e pode ser
+            usado para coletar informações de forma varidada dependendo do 
+            tipo de atributo que será utilizado.
+            São atributos comuns ao INPUT: TEXT, RADIO, CKECKBOX, SUBMITR, BUTTON 
+        </p>
+        <form action="php/submitForm.php">
+            <label for="text1">Informe seu nome:</label><br><!--LABEL SÃO ELEMENTOS USADOS PELOS SCREEN READERS 
+            PARA ACESSIBILIDADE AOS DEFICIENTES VISUAIS
+            O LABEL TB É CLICÁVEL, PARA ISSO O ID DO LABEL E DO INPUT DEVEM
+            SER IGUAIS-->
+            <input type="text" id="text1" name="txtNome"" value="Escreva!"><br>
+            
+            <h2>CHECKBOX</h2>
+            <label for="chk1">Quer viajar?</label> <!--O atributo FOR do label deve ser
+            o mesmo nome do ID ao qual ele pertence, assim ele pode funcionar
+            como um link para o checkbox ou radio melhorando acessibilidade-->
+            <input type="checkbox" id="chk1" name="chkViajar" value="Viajar"><br><br> 
+            <!--O ATRIBUTO NAME FAZ REFERÊNCIA AO NOME DO CAMPO DO ELEMENTO-->
+            <label for="chk2">No Inverno?</label>
+            <input type="checkbox" id="chk2" name="chkInverno" value="Inverno"><br>
+            <label for="chk3">No Verão?</label>
+            <input type="checkbox" id="chk3" name="chkVerao" value="Verão"><br>
+
+            <h2>RADIOBUTTON</h2>
+            <label for="rdb1">Europa</label>
+            <input type="radio" name="rbDestino" id="rdb1" value="Viagem Europa"><br>
+            <!--COMO O RADIOBUTTON DEVE SER UMA ESCOLHA UNICA O NAME DOS INPUTS
+            DE POSSIBILIDADE DEVEM SER O MESMO-->
+            <label for="rdb2">America Latina</label>
+            <input type="radio" name="rbDestino" id="rdb2" value="Viagem América Latina"><br>
+            <input type="submit" value="Enviar">
+        </form>
+
+        <form action="/action_page.php" target="_blank"><!--O ATRIBUTO TARGET DETERMINA
+            ONDE SERÁ APRESENTADA A RESPOSTA DO SUBMIT, PODE SER EM UM FRAMENAME DA
+            PÁGINA-->
+        </form>
+        <h2>Atributos do Elemento FORM</h2>
+        <h3>action</h3>
+        <p>O primeiro dos atributos é o ACTION que define qual ação será executada quando
+            o form foi enviado através do botão SUBMIT. Ele pode enviar para um arquivo
+            PHP do tipo server-script side. <br>
+            "form action="/action.php". <br>
+            Se a informação action for omitida a ação é enviada para a página corrente.
+        </p><br>
+            <h3>target</h3>
+            <p>Especifica onde será exibida a resposta do Submit. <br>
+                "form action="/action.php" target="_blank" <br>
+                As opções podem ser _blank (nova página), _self (mesma página),
+                 _parent (no frame onde se encontra o form), _top (corpo inteiro da janela) ou 
+                 framename (em um iframe específico)
+            </p><br>
+            <h3>method</h3>
+            <p></p>
+    </section>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

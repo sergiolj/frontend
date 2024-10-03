@@ -1,10 +1,221 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <title>title</title>
+    <meta name="autor" content="Sérgio Lopes Júnior">
+    <meta name="keywords" content="travel, airplane, tickets, flight, company, booking">
+    <meta name="description" content="Travel Agency Company">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="contact" content="sergio.lopes@ucsal.edu.br"> 
+
+    <title>Utravel</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <style>
+
+
+    </style>
+
 </head>
 <body>
+    <header>
+        <img src="img/Utravel_logoW.png" alt="Utravel logo">
+        <div class="headerNav">
+            <nav>
+                <a href="#home.html">Home</a>
+                <a href="#Help.html">Help</a>
+                <a href="#Log in.html">Lon in</a>
+                <a href="#Sign up.html">Sign up</a>
+                <a href="#EN.html">EN></a>
+            </nav>
+        </div>
+
+        <div>
+            <h1>we are here for you. <br>
+                Worldwide
+            </h1>
+        </div>
+        <div>
+            <h2>Book now!</h2>
+        </div>
+    </header>
+    <section id="search">
+        <div id="divFormSearch">
+            <form action="#action.php">
+            <div>
+                <p><input type="radio" name="typetrip">
+                <label for="typetrip">One way</label>
+                <input type="radio" name="typetrip">
+                <label for="typetrip">Round trip</label>
+                <input type="radio" name="typetrip">
+                <label for="typetrip">Multi-city</label>
+                </p>
+            </div>
+            <div>
+                <label for="origin">From</label><br>
+                <img src="#iconairplane.jpg" alt="Airplane">
+                <select id="origin" name="origin">
+                    <option value="Salvador" name="Salvador">Salvador</option>
+                    <option value="Aracaju" name="Aracaju">Aracaju</option>
+                    <option value="Maceio" name="Maceio">Maceio</option>
+                    <option value="São Paulo" name="São Paulo">São Paulo</option>
+                    </select>
+            </div>
+            <div>
+                <label for="destiny">To</label><br>
+                <select id="destiny" name="destiny">
+                    <option value="Salvador" name="Salvador">Salvador</option>
+                    <option value="Aracaju" name="Aracaju">Aracaju</option>
+                    <option value="Maceio" name="Maceio">Maceio</option>
+                    <option value="São Paulo" name="São Paulo">São Paulo</option>
+                    </select>
+                    <br>
+                    <input type="button" name="" value="Book now!">
+            </div>
+            <div>
+                <label for="date">Departure date</label><br>
+                <input id="dparture" type="date" name="date">
+                <br>
+                <label for="numberPass">Passengers</label><br>
+                <select id="numberPass" name="numberPass">
+                    <option value="1 adult" value="1">1 Adult</option>
+                    <option value="2 adult" value="2">2 Adult</option>
+                    <option value="3 adult" value="3">3 Adult</option>
+                </select>
+            </div>
+            </form>
+        </div>
+        <br>
+        <img src="img/Utravel_logoO.png" alt="UtravelLogo">
+
+    </section>
+    <section id="alert">
+        <div>
+            <h4><img src="img/alert.png" alt="Alert figure">Active travel alert<br>
+                There is a travel warning issued by the government 
+                due to the coronavirus epidemic (COVID-19).  
+                <a href="#alerta.html">More details</a>
+            </h4>
+        </div>
+    </section>
+
+    <section id="traveling">
+        <h4><spam style="height: bold;">Traveling from yout location</spam></h4>
+        <h6>roud trip-one passenger</h6>
+        <h5><a href="#exploreMore.html"><h5>Explore more destinations</h5></a>
+        <div>
+            <div>
+                <img src="img/London.png" alt="London city">
+                <h3>London</h3>
+                <h5>Apr 5-8</h5>
+                <h5>Direct flight  . 3h 15 min</h5>
+                <img src="img/flybe.png" alt="Flybe">
+                <h3>€ 35</h3>
+            </div>
+            <div>
+                <img src="img/Rome.png" alt="Rome city">
+                <h3>Rome</h3>
+                <h5>Oct 5-8</h5>
+                <h5>Direct flight  . 3h 15 min</h5>
+                <img src="img/jetBlue.png" alt="JetBlue">
+                <h3>€ 45</h3>
+            </div>
+            <div>
+                <img src="img/Madrid.png" alt="Madrid city">
+                <h3>Madrid</h3>
+                <h5>Oct 5-8</h5>
+                <h5>Direct flight  . 3h 15 min</h5>
+                <img src="img/Lufthansa.png" alt="FLufthansa">
+                <h3>€ 25</h3>
+            </div>
+            <div>
+                <img src="img/Paris.png" alt="Paris city">
+                <h3>Paris</h3>
+                <h5>Oct 5-8</h5>
+                <h5>Direct flight  . 3h 15 min</h5>
+                <img src="img/airfrance.png" alt="AirFrance">
+                <h3>€ 55</h3>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="discovery">
+        <h4>Discover</h4>
+            <div>
+                <img src="img/Europe.png" alt="Europe Politics Division"><br>
+                <h2>Latest travel restrictions</h2>
+                <h4>We provide information on the entry requirements 
+                    for all countries so you can plan your flight smoothly</h4>
+            </div>
+            <div>
+                <img src="img/InstallApp.png" alt="Install app"><br>
+                <h2>Install our mobile app</h2>
+                <h4>Our mobile app provides real-time information when you are at the airport</h4>
+            </div>
+            <div>
+                <img src="img/Landscape.png" alt="View Point"><br>
+                <h2>The most beautiful destinations</h2>
+                <h4>Have you ever considered visiting Easter Island or Alaska? 
+                    These are the most unique destinations in 2022</h4>
+            </div>
+    </section>
+
+    <footer>
+        <div class="footerInfo">
+            <div>
+                <ul>
+                <li><h4>Passengers</h4></li>
+                <li><a href="#airlines.html">Airlines</a></li>
+                <li><a href="#park.html">Park</a></li>
+                <li><a href="#security.html">Security Wait Times</a></li>
+                <li><a href="#map">Map</a></li>
+                <li><a href="#shopp_dine.html">Shop & Dine</a></li>    
+                </ul>
+
+            </div>
+            <div>
+                <ul>
+                <li><h4>Business and Community</h4></li>
+                <li><a href="#about.html">About us</a></li>
+                <li><a href="#carrer.html">Carrer</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                <li><h4>General</h4></li>
+                <li><a href="#report">Report Property</a></li>
+                <li><a href="#signup.html">Sign Up</a></li>
+                <li><a href="#contact.html">Contact us</a></li>
+                <li><a href="#newsroom.html">Newsroom</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerInfo">
+            <div>
+
+            </div>
+            <div style="text-align: center;">
+                <h4>Follow us</h4>
+                <img src="img/facebook.png" alt="Facebook">
+                <img src="img/instagram.png" alt="Instagram">
+                <img src="img/twitter.png" alt="X">
+                <img src="img/youtube.png" alt="YouTube">
+                <img src="img/linkedin.png" alt="LinnkedIn">
+            </div>
+            <div style="text-align: center;">
+                <h4>Donwload the Utravel</h4>
+                <img src="img/appstore.png" alt="Apple Store">
+                <img src="img/googleplay.png" alt="Google Play">
+            </div>
+        </div>
+    </footer>
     
 </body>
 </html>
