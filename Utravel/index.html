@@ -20,6 +20,16 @@
 
 
     </style>
+    <script>
+        function openTab(tabName) {
+            var i;
+            var x = document.getElementsByClassName("tabClass");
+            for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        document.getElementById(tabName).style.display = "block";
+        }
+    </script>
 
 </head>
 <body>
@@ -47,13 +57,17 @@
         </div>
     </header>
     <section id="search">
-        <div class="listMenu">
-            <a href="#Buy Tickets.html">Buy Tickets</a>
-            <a href="#flightStatus.html">Check your flight status</a>
-        </div>
-            <br><hr>
+        <div class="Grid2">
+            <div class="ahrefSearchTab">
+                <a href="#teste.html" onclick="openTab('Buy')">Buy Tickets</a>
+            </div>
+            <div class="ahrefSearchTab">
+                <a href="#teste.html" onclick="openTab('Check')">Check your flight status</a>
+            </div>
+          </div><hr>
+        <div id="buyTickets" class="tabMenu">
             <form action="#action.php">
-            <div class="Inline">
+            <div class="inline">
                 <p><input type="radio" name="typetrip">
                 <label for="typetrip">One way</label>
                 <input type="radio" name="typetrip">
@@ -113,7 +127,10 @@
         <br>
         <img src="img/Utravel_logoO.png" alt="UtravelLogo" style="display: inline-block; margin-left: 550px;">
     
-
+        </div>
+        <div id="flightStatus" class="tabMenu">
+            <!--Informação indisponível no Figma-->
+        </div>
     </section>
     <section id="alert">
         <div>
