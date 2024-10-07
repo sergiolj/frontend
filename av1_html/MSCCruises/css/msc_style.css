@@ -6,7 +6,7 @@ body{
   align-items: center;
 }
 main{
-  background: url("/img/background_footer.png") no-repeat bottom center;
+  background: url("/img/background_footer.png; width: 1280px; height: 601px") no-repeat bottom center;
 }
 header{
     width: 100%px;
