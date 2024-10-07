@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>title</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/msc_style.css">
+<base href="">
+</head>
+<body>
+<main>
+    <header>
+        <div id="fullHeader">
+            <div class="MSC_logo">
+                <br>
+                <img src="img/MSC_logo.png" alt="Logotipo da MSC">    
+            </div>
+            <div id="navRows2">     
+                <div class="navFone">
+                    <p>BRASIL 011 - 3878-8135</p>
+                </div>
+                <div class="divNavMenu">
+                    <hr>
+                    <nav class="navMenu">
+                        <ul>
+                            <li><a href="#encontre.html">ENCONTRE SEU CRUZEIRO</a></li>
+                            <li><a href="#ofertas.html">OFERTAS</a></li>
+                            <li><a href="#nossos_navios.html">NOSSOS NAVIOS</a></li>
+                            <li><a href="#destinos.html">DESTINOS</a></li>
+                            <li><a href="#gerenciar.html">GERENCIAR</a></li>
+                            <li><a href="#meu_cruzeiro.html">MEU CRUZEIRO</a></li>
+                            <li><a href="#login.html">LOGIN</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="promocoes">
+        <div class="menuCompre">
+            <h3>MENU DE PROMOÇÕES</h3>
+            <h2>AMÉRICA DO SUL</h2>
+            <form action="#form.php">
+                <button id="btCompre" class="button">COMPRE AGORA</button>
+            </form>
+        </div>
+    </section>
+    <section id="search">
+        <div class="Grid2">
+            <div class="ahrefSearchTab">
+                <a href="#reservarAgora.html" onclick="openTab('reservar')">Reservar Agora</a>
+            </div>
+          </div><hr>
+        <div id="buyTickets" class="tabMenu">
+            <form action="#action.php">
+            <div class="Grid3Cols">
+                <div>
+                    <label class="labelForm" for="destino">Destino</label><br>
+                    <select class="citySelect" id="destino" name="destino">
+                        <option value="none" selected disabled hidden>Selecionar...</option>
+                        <option value="Veneza" name="Veneza">Veneza</option>
+                        <option value="Grécia" name="Grécia">Grécia</option>
+                        <option value="Dubai" name="Dubai">Dubai</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="labelForm" for="embarque">Porto de Embarque</label><br>
+                    <select class="citySelect" id="destiny" name="destiny">
+                        <option value="none" selected disabled hidden>Selecionar...</option>
+                        <option value="Santos" name="Santos">Santos</option>
+                        <option value="Salvador" name="Salvador">Salvador</option>
+                        <option value="Recife" name="Recife">Recife</option>
+                        <option value="Natal" name="Natal">Natal</option>
+                    </select>
+                </div>
+                    <div>
+                        <label class="labelForm" for="date">Data de Embarque</label><br>
+                        <input class="citySelect" id="dparture" type="date" name="date">
+                        <br><br>
+                        <input id="btBuscar" type="button" class="button" value="BUSCAR">
+                    </div>
+                    <div>
+                        <label class="labelForm" for="numberPass">Passageiros</label><br>
+                        <select class="citySelect" id="numberPass" name="numberPass">
+                            <option value="none" selected disabled hidden>2 adult</option>
+                            <option value="1 adulto" value="1">1 adult</option>
+                            <option value="2 adultos" value="2">2 adult</option>
+                            <option value="3 adultos" value="3">3 adult</option>
+                        </select>
+                    </div>
+            </form>
+        </div>
+        <br>
+    </section>
+    <section id="nossosDestaques">
+        <h1>NOSSOS DESTAQUES</h1>
+        <div id="divDestaques">
+            <div class="divDestaque">
+                <img src="img/veneza.png" alt="Gondola em Veneza">
+                <div class="divDestaqueTxt">
+                    <h3>MSC</h3>
+                    <h3>Grand Voyages</h3>
+                    <p>A partir de*</p>
+                    <h2>R$ 7.500,00/pessoa</h2>
+                    <p>MSC Seaview<br>
+                    Saindo de: Barcelona<br>
+                    Porto de desembarque: Rio de Janeiro</p>
+                </div>
+            </div>
+            <div class="divDestaque">
+                <img src="img/dubay.png" alt="Foto Aérea de Dubai">
+                <div class="divDestaqueTxt">  
+                    <h3>MSC</h3>
+                    <h3>Dubai, Abu Dhabi & Qatar</h3>
+                    <p>A partir de*</p>
+                    <h2>R$ 9.500,00/pessoa</h2>
+                    <p>MSC Euribia<br>
+                    Saindo de: Dubai<br>
+                    Porto de desembarque: Dubai</p>
+                </div> 
+            </div>
+            <div class="divDestaque">
+                <img src="img/caribe.png" alt="Pier em direção à igreja">
+                <div class="divDestaqueTxt">
+                <h3>MSC</h3>
+                <h3>CARIBE SEM VISTO</h3>
+                <p>A partir de*</p>
+                <h2>R$ 5.500,00/pessoa</h2>
+                <p>Partindo de<br>
+                Maiami, Flórida, Labadee, Haiti<br>
+                A bordo do Independence of the Seas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sc_nossosNavios">
+        <br><br>
+        <h1>NOSSOS NAVIOS</h1>
+            <div id="divG_NossosNavios">
+                <div class="divI_NossoNavio">
+                    <img src="img/MSCArmonia.png" alt="Navio Armonia">
+                    <h2>MSC ARMONIA</h2>
+                </div>
+                <div class="divI_NossoNavio">
+                    <img src="img/MSCBEllissima.png" alt="Navio Bellissima">
+                    <h2>MSC BELLISSIMA</h2>
+                </div>
+                <div class="divI_NossoNavio">
+                    <img src="img/MSCEuribia.png" alt="Navio Euribia">
+                    <h2>MSC EURIBIA</h2>
+                </div>
+                <div class="divI_NossoNavio">
+                    <img src="img/MSCMeravigla.png" alt="Navio Meraviglia">
+                    <h2>MSC MERAVIGLIA</h2>
+                </div>
+                <div class="divI_NossoNavio">
+                    <img src="img/MSCOpera.png" alt="Navio Opera">
+                    <h2>MSC OPERA</h2>
+                </div>
+                <div class="divI_NossoNavio">
+                    <img src="img/MSCPreciosa.png" alt="Navio Preziosa">
+                    <h2>MSC PREZIOSA</h2>
+                </div>
+            </div>
+    </section>
+</main>
+<footer>
+    <p>© 2024 MSC Cruises S.A. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>
