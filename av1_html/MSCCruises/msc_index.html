@@ -12,23 +12,33 @@
 <body>
 <main>
     <header>
-        <img src="/img/MSC_logo.png" alt="Logotipo da MSC">
-        <hr>
-        <nav class="navMenu">
-            <ul>
-                <li>
-                    <a href="#encontre.html">ENCONTRE SEU CRUZEIRO</a>
-                    <a href="#ofertas.html">OFERTAS</a>
-                    <a href="#nossos_navios.html">NOSSOS NAVIOS</a>
-                    <a href="#destinos.html">DESTINOS</a>
-                    <a href="#gerenciar.html">GERENCIAR</a>
-                    <a href="#meu_cruzeiro.html">MEU CRUZEIRO</a>
-                    <a href="#login.html">LOGIN</a>
-                </li>
-            </ul>
-        </nav>
-        <p>BRASIL 011 - 3878-8135</p>
-        <div>
+        <div id="fullHeader">
+            <div id="MSC_logo">
+                <img src="img/MSC_logo.png" alt="Logotipo da MSC">    
+            </div>
+            <div id="navRows2">     
+                <div class="navFone">
+                    <p>BRASIL 011 - 3878-8135</p>
+                    <hr>
+                </div>
+                <div class="navMenu">
+                    <nav>
+                        <ul>
+                            <li>
+                            <a href="#encontre.html">ENCONTRE SEU CRUZEIRO</a>
+                            <a href="#ofertas.html">OFERTAS</a>
+                            <a href="#nossos_navios.html">NOSSOS NAVIOS</a>
+                            <a href="#destinos.html">DESTINOS</a>
+                            <a href="#gerenciar.html">GERENCIAR</a>
+                            <a href="#meu_cruzeiro.html">MEU CRUZEIRO</a>
+                            <a href="#login.html">LOGIN</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+            <div class="menuCompre">
             <h3>MENU DE PROMOÇÕES</h3>
             <h2>AMÉRICA DO SUL</h2>
             <form action="#form.php">
@@ -63,50 +73,56 @@
                         <option value="Recife" name="Recife">Recife</option>
                         <option value="Natal" name="Natal">Natal</option>
                     </select>
-                    <br><br><br>
-                    <input id="btBuscar" type="button" class="button" value="BUSCAR">
                 </div>
                     <div>
-                    <label for="date">Data de Embarque</label><br>
-                    <input class="citySelect" id="dparture" type="date" name="date">
-                    <br><br>
-                    <label for="numberPass">Passageiros</label><br>
-                    <select class="citySelect" id="numberPass" name="numberPass">
-                        <option value="none" selected disabled hidden>2 adult</option>
-                        <option value="1 adulto" value="1">1 adult</option>
-                        <option value="2 adultos" value="2">2 adult</option>
-                        <option value="3 adultos" value="3">3 adult</option>
-                    </select>
-                </div>
+                        <label for="date">Data de Embarque</label><br>
+                        <input class="citySelect" id="dparture" type="date" name="date">
+                        <br><br>
+                        <input id="btBuscar" type="button" class="button" value="BUSCAR">
+                    </div>
+                    <div>
+                        <label for="numberPass">Passageiros</label><br>
+                        <select class="citySelect" id="numberPass" name="numberPass">
+                            <option value="none" selected disabled hidden>2 adult</option>
+                            <option value="1 adulto" value="1">1 adult</option>
+                            <option value="2 adultos" value="2">2 adult</option>
+                            <option value="3 adultos" value="3">3 adult</option>
+                        </select>
+                    </div>
             </form>
         </div>
         <br>
     </section>
     <section id="nossosDestaques">
         <h1>NOSSOS DESTAQUES</h1>
-        <div class="Grid3Cols">
-            <div style="box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25)">
-                <img src="/img/veneza.png" alt="Gondola em Veneza">
-                <h3>MSC</h3>
-                <h3>Grand Voyages</h3>
-                <p>A partir de*</p>
-                <h2>R$ 7.500,00/pessoa</h2>
-                <p>MSC Seaview<br>
-                Saindo de: Barcelona<br>
-                Porto de desembarque: Rio de Janeiro</p>
+        <div id="divDestaques">
+            <div class="divDestaque">
+                <img src="img/veneza.png" alt="Gondola em Veneza">
+                <div class="divDestaqueTxt">
+                    <h3>MSC</h3>
+                    <h3>Grand Voyages</h3>
+                    <p>A partir de*</p>
+                    <h2>R$ 7.500,00/pessoa</h2>
+                    <p>MSC Seaview<br>
+                    Saindo de: Barcelona<br>
+                    Porto de desembarque: Rio de Janeiro</p>
+                </div>
             </div>
-            <div style="box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25)">
-                <img src="/img/dubay.png" alt="Foto Aérea de Dubai">
-                <h3>MSC</h3>
-                <h3>Dubai, Abu Dhabi & Qatar</h3>
-                <p>A partir de*</p>
-                <h2>R$ 9.500,00/pessoa</h2>
-                <p>MSC Euribia<br>
-                Saindo de: Dubai<br>
-                Porto de desembarque: Dubai</p>
+            <div class="divDestaque">
+                <img src="img/dubay.png" alt="Foto Aérea de Dubai">
+                <div class="divDestaqueTxt">  
+                    <h3>MSC</h3>
+                    <h3>Dubai, Abu Dhabi & Qatar</h3>
+                    <p>A partir de*</p>
+                    <h2>R$ 9.500,00/pessoa</h2>
+                    <p>MSC Euribia<br>
+                    Saindo de: Dubai<br>
+                    Porto de desembarque: Dubai</p>
+                </div> 
             </div>
-            <div style="box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25)">
-                <img src="/img/caribe.png" alt="Pier em direção à igreja">
+            <div class="divDestaque">
+                <img src="img/caribe.png" alt="Pier em direção à igreja">
+                <div class="divDestaqueTxt">
                 <h3>MSC</h3>
                 <h3>CARIBE SEM VISTO</h3>
                 <p>A partir de*</p>
@@ -114,33 +130,35 @@
                 <p>Partindo de<br>
                 Maiami, Flórida, Labadee, Haiti<br>
                 A bordo do Independence of the Seas</p>
+                </div>
             </div>
         </div>
     </section>
-    <section id="nosssosNavios">
-            <div class="Grid2Cols">
-                <div>
-                    <img src="/img/MSCArmonia.png" alt="Navio Armonia">
+    <section id="sc_nossosNavios">
+        <h1>NOSSOS NAVIOS</h1>
+            <div id="divG_NossosNavios">
+                <div class="divNossoNavio">
+                    <img src="img/MSCArmonia.png" alt="Navio Armonia">
                     <h2>MSC ARMONIA</h2>
                 </div>
-                <div>
-                    <img src="/img/MSCBEllissima.png" alt="Navio Bellissima">
+                <div class="divI_NossoNavio">
+                    <img src="img/MSCBEllissima.png" alt="Navio Bellissima">
                     <h2>MSC BELLISSIMA</h2>
                 </div>
-                <div>
-                    <img src="/img/MSCEuribia.png" alt="Navio Euribia">
+                <div class="divI_NossoNavio">
+                    <img src="img/MSCEuribia.png" alt="Navio Euribia">
                     <h2>MSC EURIBIA</h2>
                 </div>
-                <div>
-                    <img src="/img/MSCMeravigla.png" alt="Navio Meraviglia">
+                <div class="divI_NossoNavio">
+                    <img src="img/MSCMeravigla.png" alt="Navio Meraviglia">
                     <h2>MSC MERAVIGLIA</h2>
                 </div>
-                <div>
-                    <img src="/img/MSCOpera.png" alt="Navio Opera">
+                <div class="divI_NossoNavio">
+                    <img src="img/MSCOpera.png" alt="Navio Opera">
                     <h2>MSC OPERA</h2>
                 </div>
-                <div>
-                    <img src="/img/MSCPreciosa.png" alt="Navio Preziosa">
+                <div class="divI_NossoNavio">
+                    <img src="img/MSCPreciosa.png" alt="Navio Preziosa">
                     <h2>MSC PREZIOSA</h2>
                 </div>
             </div>
