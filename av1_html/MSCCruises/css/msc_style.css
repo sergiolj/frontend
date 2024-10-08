@@ -6,15 +6,21 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
     background-repeat: no-repeat;
     background-position: top;
     font-family: "Poppins", sans-serif;
+  }
+  header a:hover{
+    text-decoration: underline;
+    text-decoration-color: #FF6900;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 10px;
   }
   main{
     max-width: 1280px;
     width: 1280px;
     background: url("../img/background_footer.png") no-repeat bottom center;
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,7 +28,7 @@ body{
   header{
       max-width: 1280px;
       width: 1280px;
-      height: 108px;
+      height: 110px;
       display: flex; /*Expande o uso para a max-width*/
       background-color:#1A1C39 ;
   }
@@ -74,6 +80,7 @@ body{
   }
   
   .navMenu ul{ /* esse código é para que o gap seja aplicado à lista*/
+    margin-top: -8px;
     display: flex;
     gap: 10px;
     text-align: left;
@@ -90,11 +97,12 @@ body{
     font-weight: 400;
     color: rgb(255, 255, 255);
   }
-    .divNavMenu a:hover{
+    .navMenu ul li a:hover{
     text-decoration: underline;
     text-decoration-color: #FF6900;
     text-decoration-thickness: 3px;
     text-underline-offset: 10px;
+    color: #FF6900;
   }
   .menuCompre{
     max-width: 1280px;
@@ -132,7 +140,7 @@ body{
     background-color: #ffffff;
     border-radius: 7px;
     width: 955px;
-    height: 290px;
+    height: 250px;
     margin-top: 100px;
     align-self: auto;
     padding-top: 40px; /*Margem para início do texto*/
@@ -192,7 +200,7 @@ body{
   /*INICIO SECTION NOSSOS NAVIOS*/
   #sc_nossosNavios{ /*id referente aos limites da sessão*/
     width: 955px;
-    height: 601px;
+    height: 700px;
   }
   #divG_NossosNavios{ /*id referente à DIV geral*/
     gap: 15px;
@@ -201,7 +209,7 @@ body{
   }
   .divI_NossoNavio{ /*classe referente as divisões internas da DIV Geral*/
     width: 466px;
-    height: 145px;
+    height: 155px;
     border-radius: 12px 12px 0px 0px;
     background: rgba(217, 217, 217, 0.70);
     box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
@@ -215,8 +223,9 @@ body{
     font-size: 24px;
     font-weight: 700;
     color: black;
-    line-height: 5%;
+    line-height: 20%;
     padding-left: 10px;
+
 
   }
   
@@ -235,6 +244,9 @@ body{
     border: none;
     font-size: 16px;
   }
+  #divBusca input{
+   float: right;
+  }
   #btCompre{
     font-weight: 600;
     background: #FF6900;
@@ -242,6 +254,7 @@ body{
     font-size: 16px;
   }
   #btBuscar{
+    margin-right: 60px;
     background: #1A1C39;
   }
   .citySelect{ /*Personalização das caixas de Select e de date*/
@@ -284,119 +297,3 @@ body{
     grid-template-columns: 50% 50%;
   }
   
-  /**/
-  
-  
-  
-  
-  
-  
-  
-  .poppins-thin {
-      font-family: "Poppins", sans-serif;
-      font-weight: 100;
-      font-style: normal;
-    }
-    
-    .poppins-extralight {
-      font-family: "Poppins", sans-serif;
-      font-weight: 200;
-      font-style: normal;
-    }
-    
-    .poppins-light {
-      font-family: "Poppins", sans-serif;
-      font-weight: 300;
-      font-style: normal;
-    }
-    
-    .poppins-regular {
-      font-family: "Poppins", sans-serif;
-      font-weight: 400;
-      font-style: normal;
-    }
-    
-    .poppins-medium {
-      font-family: "Poppins", sans-serif;
-      font-weight: 500;
-      font-style: normal;
-    }
-    
-    .poppins-semibold {
-      font-family: "Poppins", sans-serif;
-      font-weight: 600;
-      font-style: normal;
-    }
-    
-    .poppins-bold {
-      font-family: "Poppins", sans-serif;
-      font-weight: 700;
-      font-style: normal;
-    }
-    
-    .poppins-extrabold {
-      font-family: "Poppins", sans-serif;
-      font-weight: 800;
-      font-style: normal;
-    }
-    
-    .poppins-black {
-      font-family: "Poppins", sans-serif;
-      font-weight: 900;
-      font-style: normal;
-    }
-    
-    .poppins-thin-italic {
-      font-family: "Poppins", sans-serif;
-      font-weight: 100;
-      font-style: italic;
-    }
-    
-    .poppins-extralight-italic {
-      font-family: "Poppins", sans-serif;
-      font-weight: 200;
-      font-style: italic;
-    }
-    
-    .poppins-light-italic {
-      font-family: "Poppins", sans-serif;
-      font-weight: 300;
-      font-style: italic;
-    }
-    
-    .poppins-regular-italic {
-      font-family: "Poppins", sans-serif;
-      font-weight: 400;
-      font-style: italic;
-    }
-    
-    .poppins-medium-italic {
-      font-family: "Poppins", sans-serif;
-      font-weight: 500;
-      font-style: italic;
-    }
-    
-    .poppins-semibold-italic {
-      font-family: "Poppins", sans-serif;
-      font-weight: 600;
-      font-style: italic;
-    }
-    
-    .poppins-bold-italic {
-      font-family: "Poppins", sans-serif;
-      font-weight: 700;
-      font-style: italic;
-    }
-    
-    .poppins-extrabold-italic {
-      font-family: "Poppins", sans-serif;
-      font-weight: 800;
-      font-style: italic;
-    }
-    
-    .poppins-black-italic {
-      font-family: "Poppins", sans-serif;
-      font-weight: 900;
-      font-style: italic;
-    }
-    
