@@ -10,12 +10,6 @@ body{
     background-position: top;
     font-family: "Poppins", sans-serif;
   }
-  header a:hover{
-    text-decoration: underline;
-    text-decoration-color: #FF6900;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 10px;
-  }
   main{
     max-width: 1280px;
     width: 1280px;
@@ -26,19 +20,17 @@ body{
     align-items: center;
   }
   header{
-      max-width: 1280px;
-      width: 1280px;
-      height: 110px;
-      display: flex; /*Expande o uso para a max-width*/
-      background-color:#1A1C39 ;
-  }
+    max-width: 1280px;
+    width: 1280px;
+    height: 110px;
+    background-color:#1A1C39 ;
+}
   #nossosNavios{
-    max-width: 954px;
+    width: 954px;
     width: 954px;
     height: 534px;
   }
   #fullHeader{
-    width: 1280px;
     display: grid;
     grid-template-columns: 15% 85%;
   }
@@ -74,9 +66,9 @@ body{
     font-weight: 400;
     text-align: right;
   }
-  div.navFone hr{
+  div.navFone hr{ /*A opção para mudar de cor no HR é border-color e não color*/
     width: 1px;
-    color:white;
+    border-color:white;
   }
   
   .navMenu ul{ /* esse código é para que o gap seja aplicado à lista*/
@@ -87,25 +79,23 @@ body{
     list-style: none;
   }
 
-  .divNavMenu hr{
-    color: #353535;
+  .divNavMenu hr{ /*A opção para mudar de cor no HR é border-color e não color*/
+    border-color: #353535;
   }
   .navMenu ul li a{
     font-size: 12px;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    color: rgb(255, 255, 255);
+    color: white;
   }
-    .navMenu ul li a:hover{
+  .navMenu ul li a:hover{
     text-decoration: underline;
     text-decoration-color: #FF6900;
     text-decoration-thickness: 3px;
     text-underline-offset: 10px;
-    color: #FF6900;
   }
   .menuCompre{
-    max-width: 1280px;
     width: 1280px;
     color: #ffffff;
     margin-top: 135px;
@@ -144,7 +134,8 @@ body{
     margin-top: 100px;
     align-self: auto;
     padding-top: 40px; /*Margem para início do texto*/
-    padding-left: 30px; 
+    padding-left: 30px;
+    padding-right: 30px;
     box-shadow: 2px -6px 5px 3px rgba(0, 0, 0, 0.26);
   }
   #search a{
@@ -225,8 +216,6 @@ body{
     color: black;
     line-height: 20%;
     padding-left: 10px;
-
-
   }
   
   .divI_NossoNavio > img {/* classe referente às imagens das divs internas*/
