@@ -1,0 +1,287 @@
+body{
+  max-width: 1280px;
+  width: 1280px;
+  background: url("../img/background_navio.png") no-repeat top center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: top;
+  font-family: "Poppins", sans-serif;
+}
+main{
+  max-width: 1280px;
+  width: 1280px;
+  background: url("../img/background_footer.png") no-repeat bottom center;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header{
+  max-width: 1280px;
+  width: 1280px;
+  height: 110px;
+  background-color:#1A1C39 ;
+}
+#nossosNavios{
+  width: 954px;
+  width: 954px;
+  height: 534px;
+}
+#fullHeader{
+  display: grid;
+  grid-template-columns: 15% 85%;
+}
+.MSCLogo img{
+  max-width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+.MSCLogo{
+  padding-left: 10px;
+  display: flex;
+}
+#navRows2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#promocoes{
+  text-align: left;
+  padding-left: 1600px;
+  margin-top: -110px;
+  display: flex;
+  height: 309px;
+}
+.navFone p{
+  text-align: right;
+  padding-right: 40px;
+}
+.navFone{
+  color: #ffffff; 
+  font-size: 10px;
+  font-weight: 400;
+  text-align: right;
+}
+div.navFone hr{ /*A opção para mudar de cor no HR é border-color e não color*/
+  width: 1px;
+  border-color:white;
+}
+
+.navMenu ul{ /* esse código é para que o gap seja aplicado à lista*/
+  margin-top: -8px;
+  display: flex;
+  gap: 10px;
+  text-align: left;
+  list-style: none;
+}
+
+.divNavMenu hr{ /*A opção para mudar de cor no HR é border-color e não color*/
+  border-color: #353535;
+}
+.navMenu ul li a{
+  font-size: 12px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: white;
+}
+.navMenu ul li a:hover{
+  text-decoration: underline;
+  text-decoration-color: #FF6900;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 10px;
+}
+.menuCompre{
+  width: 1280px;
+  color: #ffffff;
+  margin-top: 135px;
+  padding-left: 50px ;
+
+}
+.menuCompre h2{
+  font-size: 48px;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 20%;
+}
+.menuCompre h3{
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 30%;
+}
+footer{
+  max-width: 1280px;
+  width: 1280px;
+  height: 100px;
+  background-color: #1A1C39;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  padding-top: 37px;
+  text-transform: uppercase;
+}
+#search{
+  background-color: #ffffff;
+  border-radius: 7px;
+  width: 955px;
+  height: 250px;
+  margin-top: 100px;
+  align-self: auto;
+  padding-top: 40px; /*Margem para início do texto*/
+  padding-left: 30px;
+  padding-right: 30px;
+  box-shadow: 2px -6px 5px 3px rgba(0, 0, 0, 0.26);
+}
+#search a{
+  font-size: 20px;
+  color: #1A1C39;
+  text-decoration: none;
+}
+
+/*INICIO SECTION DESTAQUES*/
+#nossosDestaques{ /*id referente aos limites da sessão*/
+  margin-top: 0px;
+  width: 955px;
+  height: 534px;
+}
+#divDestaques { /*id referente à DIV do bloco geral da sessão*/
+  display: flex;
+  column-gap: 23px;
+}
+.divDestaque { /*classe referente as divisões internas da sessão*/
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+}
+.divDestaqueTxt{ /*classe referente ao padding do bloco de textos (h2,h3 e p)*/
+  padding-left: 20px;
+}
+.divDestaque > div > img { /*classe referentes as imagens internas da div*/
+  height: 22px;
+  width: fit-content;
+}
+#nossosDestaques h1{ /*id referente ao h1 (TÍTULO DA SESSÃO) */
+  font-size: 36px;
+  color: black;
+}
+#nossosDestaques h2{/*id referente ao h2 (NOMES DOS PACOTES) */
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 35%;
+}
+#nossosDestaques h3{/*id referente ao h3 (PRECOS DOS PACOTES) */
+  font-size: 20px;
+  line-height: 35%;
+  font-weight: 600;
+}
+#nossosDestaques p{ /*id referente aos parágrafos*/
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 120%;
+}
+/*FIM SECTION DESTAQUES*/
+
+
+/*INICIO SECTION NOSSOS NAVIOS*/
+#sc_nossosNavios{ /*id referente aos limites da sessão*/
+  width: 955px;
+  height: 700px;
+}
+#divG_NossosNavios{ /*id referente à DIV geral*/
+  gap: 15px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.divI_NossoNavio{ /*classe referente as divisões internas da DIV Geral*/
+  width: 466px;
+  height: 155px;
+  border-radius: 12px 12px 0px 0px;
+  background: rgba(217, 217, 217, 0.70);
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+}
+#sc_nossosNavios h1{/*id referente ao h1 (TÍTULO DA SESSÃO)*/
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+}
+#sc_nossosNavios h2{/*id referente ao h1 (TÍTULO DA SESSÃO)*/
+  font-size: 24px;
+  font-weight: 700;
+  color: black;
+  line-height: 20%;
+  padding-left: 10px;
+}
+
+.divI_NossoNavio > img {/* classe referente às imagens das divs internas*/
+  width: fit-content;
+}
+/*FIM SECTION MEUS NAVIOS*/
+
+
+/*PERSONALIZAÇÃO DE FORMS*/
+.button{
+  color: white;
+  border-radius: 6px;
+  width: 190px;
+  height: 40px;
+  border: none;
+  font-size: 16px;
+}
+#divBusca input{
+ float: right;
+}
+#btCompre{
+  font-weight: 600;
+  background: #FF6900;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+#btBuscar{
+  margin-right: 60px;
+  background: #1A1C39;
+}
+.citySelect{ /*Personalização das caixas de Select e de date*/
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: white;
+  color: #A4A4A4;
+  border: 0.5px solid;
+  border-color: rgb(134, 134, 134);
+  height: 35px;
+  width: 245px;
+  border-radius: 3px;
+  line-height: 16px;
+
+}
+.citySelect select.selected{
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+}
+
+/*PERSONALIZAÇÃO DOS DIVS*/
+div.Grid3Cols{
+  padding-left: 20px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-column-gap: 23px;
+}
+.labelForm{
+  color: #4E4E4E;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+div.Grid2Cols{
+  padding-left: 20px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
